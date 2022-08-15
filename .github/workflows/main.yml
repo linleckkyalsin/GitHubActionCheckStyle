@@ -28,6 +28,5 @@ jobs:
                 github_token: ${{ secrets.SECRET_TOKEN }}
                 level: 'error'
                 reporter: 'github-pr-check'
-                workdir: 'src/main'
                 tool_name: 'Checkstyle'
 
