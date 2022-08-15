@@ -18,8 +18,9 @@ jobs:
           distribution: 'temurin'
           
       - name: Run Check Style
-        uses: nikitasavinov/checkstyle-action@0.6.0
+        uses: nikitasavinov/checkstyle-action@master
         with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}
          level: 'error'
          reporter: 'github-pr-check'
-         tool_name: 'Check Style'
+         tool_name: 'Checkstyle'
