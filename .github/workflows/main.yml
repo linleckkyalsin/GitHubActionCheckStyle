@@ -20,6 +20,7 @@ jobs:
       - name: Run Check Style
         uses: nikitasavinov/checkstyle-action@0.6.0
         with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}
          level: 'error'
          reporter: 'github-pr-check'
          tool_name: 'Check Style'
