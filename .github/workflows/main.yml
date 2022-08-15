@@ -29,8 +29,6 @@ jobs:
          uses: actions/setup-java@v3.1.0
          with:
           java-version: '11'
-          distribution: 'temurin'
-          cache: 'gradle'
          
        - name: Run check style
          uses: nikitasavinov/checkstyle-action@0.6.0
